@@ -24,3 +24,15 @@ provider "registry.terraform.io/hashicorp/aws" {
     "zh:f565e5caa1b349ec404c6d03d01c68b02233f5485ed038d0aab810dd4023a880",
   ]
 }
+
+provider "registry.terraform.io/poseidon/ct" {
+  version     = "0.8.0"
+  constraints = "0.8.0"
+  hashes = [
+    "h1:lh82ZqChuYXkZF3vhGas86JoGYfzXDss1dBu+Y6pUn4=",
+    "zh:50cd14b2edf141f6f55eece7a3469d79f4bcb835c1a46fe750972b21a7111059",
+    "zh:62af7f256976bab1c077175af52c18087710f277aff156ea504bda57ff0f1c8e",
+    "zh:9ab73eaacfef1e81973a1b7d4054ccc23b87c6d12d874080b336a351a9a9ac71",
+    "zh:c3efc500fdf84f9ea121d92818ea03e2b8f30ed62e9acfceff5e20de17bb00ef",
+  ]
+}
