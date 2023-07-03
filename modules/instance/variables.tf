@@ -5,7 +5,7 @@ variable "user" {
 
 
 variable "ssh_key" {
-  description = "public key path"
+  description = "public key"
   type        = string
 }
 
