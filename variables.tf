@@ -13,12 +13,12 @@ variable "instance_user" {
   type        = string
 }
 
-variable "instance_key_file" {
-  description = "public key path"
+variable "image" {
+  description = "container image you will run on the instance"
   type        = string
 }
 
-variable "image" {
-  description = "container image you will run on the instance"
+variable "env" {
+  description = "environment"
   type        = string
 }

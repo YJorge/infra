@@ -12,11 +12,10 @@ resource "aws_eip_association" "eip_assoc" {
 data "ct_config" "config" {
   content = templatefile("${path.module}/config.tpl", {
     user = var.user
-    key  = file(var.ssh_key)
+    key  = var.ssh_key
   })
   strict = true
 }
-
 
 # Instance
 resource "aws_instance" "app_server" {

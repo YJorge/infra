@@ -8,10 +8,15 @@ module "instance" {
   source       = "./modules/instance"
   instance_ami = var.instance_ami
   user         = var.instance_user
-  ssh_key      = var.instance_key_file
+  ssh_key      = module.ssh.public_key_openssh
   ec2_sg_id    = module.networking.ec2_sg_id
 }
 
 module "networking" {
   source = "./modules/networking"
+}
+
+module "ssh" {
+  source = "./modules/ssh"
+  env    = var.env
 }
