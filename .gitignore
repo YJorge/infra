@@ -2,3 +2,6 @@
 .vscode
 ssh_keys
 *.tfstate*
+*tfvars*
+.aws
+secrets.tfvars
