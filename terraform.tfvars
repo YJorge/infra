@@ -1,5 +1,0 @@
-region        = "us-east-1"
-instance_ami  = "ami-09e2e5104f310ffb5"
-instance_user = "core"
-image         = "kaitoendo/ping-pong:latest"
-env           = "staging"
